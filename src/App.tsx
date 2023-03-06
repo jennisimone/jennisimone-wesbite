@@ -3,7 +3,7 @@ import './App.scss';
 import {Route, Routes} from "react-router-dom";
 import Home from "./components/Home/Home";
 import Projects from "./components/Projects/Projects";
-import Contact from "./components/Contact/Contact";
+import Blog from "./components/Blog/Blog";
 import NavBar from "./components/NavBar/NavBar";
 
 function App() {
@@ -13,7 +13,7 @@ function App() {
             <Routes>
                 <Route path="/" element={<Home/>}/>
                 <Route path="/projects" element={<Projects/>}/>
-                <Route path="/contact" element={<Contact/>}/>
+                <Route path="/blog" element={<Blog/>}/>
             </Routes>
         </>
     );

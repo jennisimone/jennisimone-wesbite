@@ -14,7 +14,7 @@ const NavBar: FC<NavBarProps> = () => (
                 <NavLink to="/projects">Projects</NavLink>
             </li>
             <li>
-                <NavLink to="/contact">Contact</NavLink>
+                <NavLink to="/blog">Blog</NavLink>
             </li>
         </ul>
     </nav>
