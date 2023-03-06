@@ -1,0 +1,30 @@
+.NavBar {
+  background-color: #282c34;
+  height: 100px;
+  display: flex;
+  align-items: center;
+
+  ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    list-style-type: none;
+    margin: 0;
+    width: 100%;
+    font-size: 24px;
+    padding: 0;
+  }
+
+  ul li a {
+    color: white;
+    text-decoration: none
+  }
+
+  ul li a:hover {
+    color: #00a8ff;
+  }
+
+  ul li a.active {
+    color: #00a8ff;
+  }
+}
