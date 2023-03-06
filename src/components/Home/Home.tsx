@@ -21,7 +21,7 @@ const Home: FC<HomeProps> = () => (
             <div className={styles.About}>
                 <div className={styles.AboutImage}>
                     <h3>About me</h3>
-                    <img src={'/images/about-image.jpeg'} alt={'image of author'}/>
+                    <img src={'/images/about-image.jpeg'} alt={'author photo'}/>
                 </div>
                 <p>Hello! I'm a software developer based in Manchester, UK. My professional specialty is mainly back end
                     web development in Kotlin, Java and Typescript. Beyond my job, I have a personal interest in Game
