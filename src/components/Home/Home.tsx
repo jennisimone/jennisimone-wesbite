@@ -13,6 +13,10 @@ const Home: FC<HomeProps> = () => (
                     src={'/images/github.svg'} alt={'github logo'}/>Github</a>
                 <a target={'_blank'} href='https://www.linkedin.com/in/fosterjenni/' rel="noreferrer"><img
                     src={'/images/linkedin.png'} alt={'linkedin logo'}/>LinkedIn</a>
+                <a target={'_blank'} href='https://jennisimone.itch.io' rel="noreferrer"><img
+                    src={'/images/itch-logo.png'} alt={'itch logo'}/>Itch.io</a>
+                <a target={'_blank'} href='https://play.google.com/store/apps/developer?id=jennisimone&gl=GB' rel="noreferrer"><img
+                    src={'/images/play-logo.png'} alt={'google play logo'}/>Google Play</a>
             </div>
             <div className={styles.About}>
                 <div className={styles.AboutImage}>
