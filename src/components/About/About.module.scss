@@ -1,0 +1,64 @@
+.Home {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  margin: 16px;
+
+  .Title {
+    font-size: xxx-large;
+  }
+
+  .SectionContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding-top: 32px;
+
+    .About {
+      max-width: 60%;
+      h3 {
+        margin-top: 0;
+      }
+
+      img {
+        max-height: 150px;
+        border-radius: 50%;
+      }
+    }
+
+    .AboutImage {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+      align-items: flex-end;
+    }
+
+    .Links {
+      display: flex;
+      flex-direction: column;
+      max-width: 30%;
+
+      a {
+        color: #282c34;
+        text-decoration: none;
+        font-size: 18px;
+        padding: 20px;
+
+        img {
+          max-height: 20px;
+          padding-right: 5px;
+        }
+      }
+
+      a:hover {
+        color: #00a8ff;
+      }
+
+      a.active {
+        color: #00a8ff;
+      }
+    }
+  }
+
+}

@@ -11,6 +11,9 @@ const NavBar: FC<NavBarProps> = () => (
                 <NavLink to="/">Home</NavLink>
             </li>
             <li>
+                <NavLink to="/about">About</NavLink>
+            </li>
+            <li>
                 <NavLink to="/projects">Projects</NavLink>
             </li>
             <li>
