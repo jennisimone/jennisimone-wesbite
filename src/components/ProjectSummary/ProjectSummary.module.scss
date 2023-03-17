@@ -8,17 +8,26 @@
   .Title {
     font-size: 24px;
     padding-bottom: 16px;
+    width: 100%;
+    text-align: center;
   }
 
   .Image {
-    width: 80%;
+    height: 300px;
+  }
+
+  .Icon {
+    img {
+      max-height: 100px;
+    }
   }
 
   .Summary {
     text-align: justify;
+    height: 100px;
+  }
 
-    img {
-      max-height: 100px;
-    }
+  .LearnMore {
+    margin-bottom: 8px;
   }
 }
