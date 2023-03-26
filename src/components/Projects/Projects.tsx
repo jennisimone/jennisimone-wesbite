@@ -6,15 +6,17 @@ import {antHillMassacreProps} from "./projects-data/ant-hill-massacre";
 import {afraidOfTheDarkProps} from "./projects-data/afraid-of-the-dark";
 import {robotJumpProps} from "./projects-data/robot-jump";
 import {operationPresentDropProps} from "./projects-data/operation-present-drop";
+import {moondustProps} from "./projects-data/moondust";
 
 interface ProjectsProps {
 }
 
 const Projects: FC<ProjectsProps> = () => (
     <div className={styles.Projects}>
-        <ProjectSummary {...antHillMassacreProps}/>
-        <ProjectSummary {...afraidOfTheDarkProps}/>
         <ProjectSummary {...robotJumpProps}/>
+        <ProjectSummary {...moondustProps}/>
+        <ProjectSummary {...afraidOfTheDarkProps}/>
+        <ProjectSummary {...antHillMassacreProps}/>
         <ProjectSummary {...whatShouldIPlayProps}/>
         <ProjectSummary {...operationPresentDropProps}/>
     </div>

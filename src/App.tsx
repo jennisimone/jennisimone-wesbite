@@ -13,6 +13,7 @@ import {robotJumpProps} from "./components/Projects/projects-data/robot-jump";
 import {whatShouldIPlayProps} from "./components/Projects/projects-data/what-should-i-play";
 import {operationPresentDropProps} from "./components/Projects/projects-data/operation-present-drop";
 import {robotJumpDetailProps} from "./components/ProjectDetail/data/robot-jump-detail";
+import {moondustProps} from "./components/Projects/projects-data/moondust";
 
 function App() {
     return (
@@ -27,6 +28,7 @@ function App() {
                 <Route path={`projects/${robotJumpProps.path}`} element={<ProjectDetail {...robotJumpDetailProps}/>}/>
                 <Route path={`projects/${whatShouldIPlayProps.path}`} element={<ProjectDetail {...robotJumpDetailProps}/>}/>
                 <Route path={`projects/${operationPresentDropProps.path}`} element={<ProjectDetail {...robotJumpDetailProps}/>}/>
+                <Route path={`projects/${moondustProps.path}`} element={<ProjectDetail {...robotJumpDetailProps}/>}/>
                 <Route path="blog" element={<Blog/>}/>
             </Routes>
         </>
