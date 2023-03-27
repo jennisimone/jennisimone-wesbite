@@ -3,6 +3,8 @@ import styles from './NavBar.module.scss'
 import { NavLink } from "react-router-dom";
 import { useBreakpoint } from "styled-breakpoints/react-styled";
 import { down } from "styled-breakpoints";
+import { MdClose } from 'react-icons/md';
+import { FiMenu } from 'react-icons/fi';
 
 interface NavBarProps {
 }
@@ -19,20 +21,24 @@ const NavBar: FC<NavBarProps> = () => {
                         className={styles.Toggle}
                         onClick={() => setNavbarOpen((prev) => !prev)}
                     >
-                        {navbarOpen ? 'close' : 'open'}
+                        {navbarOpen ? (<MdClose style={{width: '32px', height: '32px', color: '#bdafd6'}}/>) : (<FiMenu
+                            style={{
+                                width: '32px', height: '32px', color: '#bdafd6'
+                            }}
+                        />)}
                     </button>
                     <ul className={`${styles.BurgerNav}${navbarOpen ? ` ${styles.ShowMenu}` : ''}`}>
                         <li>
-                            <NavLink to="/">Homely</NavLink>
+                            <NavLink onClick={() => setNavbarOpen(false)} to="/">Home</NavLink>
                         </li>
                         <li>
-                            <NavLink to="/about">Abouts</NavLink>
+                            <NavLink onClick={() => setNavbarOpen(false)} to="/about">About</NavLink>
                         </li>
                         <li>
-                            <NavLink to="/projects">Projects</NavLink>
+                            <NavLink onClick={() => setNavbarOpen(false)} to="/projects">Projects</NavLink>
                         </li>
                         <li>
-                            <NavLink to="/blog">Blog</NavLink>
+                            <NavLink onClick={() => setNavbarOpen(false)} to="/blog">Blog</NavLink>
                         </li>
                     </ul>
                 </div>
