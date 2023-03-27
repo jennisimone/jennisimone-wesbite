@@ -1,8 +1,17 @@
 .NavBar {
-  background-color: #282c34;
+  background-color: #f2d2cf;
   height: 100px;
   display: flex;
   align-items: center;
+  justify-content: space-between;
+
+  .Name {
+    margin-left: 32px;
+    font-size: xx-large;
+    color: white;
+    background-color: #bdafd6;
+    padding: 16px;
+  }
 
   ul {
     display: flex;
@@ -10,21 +19,93 @@
     justify-content: space-around;
     list-style-type: none;
     margin: 0;
-    width: 100%;
+    width: 60%;
+    align-items: flex-end;
     font-size: 24px;
     padding: 0;
   }
 
   ul li a {
-    color: white;
+    color: black;
     text-decoration: none
   }
 
   ul li a:hover {
-    color: #00a8ff;
+    color: white;
   }
 
   ul li a.active {
     color: #00a8ff;
+  }
+}
+
+
+
+/*==========================
+Sidebar navigation
+========================*/
+.MobileNavBar {
+  position: relative;
+  background-color: #f2d2cf;
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  .Name {
+    margin-left: 32px;
+    font-size: large;
+    color: white;
+    background-color: #bdafd6;
+    padding: 8px;
+  }
+
+  button {
+    cursor: pointer;
+    background: transparent;;
+    border: none;
+    font-size: 20px;
+  }
+
+  .MobileNavBar .Toggle {
+    position: fixed;
+    left: 30px;
+    top: 40px;
+    cursor: pointer;
+    background: transparent;;
+    border: none;
+  }
+
+  .BurgerNav {
+    list-style: none;
+    position: absolute;
+    background: #fff;
+    left: 0;
+    width: 0;
+    overflow: hidden;
+    max-width: 290px;
+    z-index: 9;
+    font-size: 18px;
+    box-shadow: 0 10px 15px -3px rgb(46 41 51 / 8%), 0 4px 6px -2px rgb(71 63 79 / 16%);
+    transform: translateX(100px);
+    transition: transform ease-in-out 0.2s;
+    display: none;
+    /* transition: width ease 0.2s; */
+  }
+
+  .BurgerNav.ShowMenu {
+    width: 80%;
+    display: block;
+  }
+
+  .BurgerNav li a, .BurgerNav li span {
+    display: flex;
+    padding: 1rem;
+    flex-direction: column;
+    list-style-type: none;
+    margin: 0;
+    width: 60%;
+    align-items: flex-end;
+    font-size: 14px;
   }
 }

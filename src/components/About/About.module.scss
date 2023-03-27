@@ -30,7 +30,7 @@
     .AboutImage {
       display: flex;
       flex-direction: row;
-      justify-content: space-around;
+      justify-content: space-between;
       align-items: flex-end;
     }
 
@@ -44,6 +44,8 @@
         text-decoration: none;
         font-size: 18px;
         padding: 20px;
+        align-items: center;
+        display: flex;
 
         img {
           max-height: 20px;
@@ -52,7 +54,7 @@
       }
 
       a:hover {
-        color: #00a8ff;
+        color: #bdafd6;
       }
 
       a.active {

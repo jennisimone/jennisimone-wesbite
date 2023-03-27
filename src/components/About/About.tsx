@@ -6,7 +6,6 @@ interface AboutProps {
 
 const About: FC<AboutProps> = () => (
     <div className={styles.Home}>
-        <div className={styles.Title}>jennisimone</div>
         <div className={styles.SectionContainer}>
             <div className={styles.Links}>
                 <a target={'_blank'} href='https://github.com/jennisimone' rel="noreferrer"> <img
