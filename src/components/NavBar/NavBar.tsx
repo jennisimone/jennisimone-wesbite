@@ -1,4 +1,4 @@
-import React, { FC, useState } from 'react';
+import React, { FC, useEffect, useRef, useState } from 'react';
 import styles from './NavBar.module.scss'
 import { NavLink } from "react-router-dom";
 import { useBreakpoint } from "styled-breakpoints/react-styled";
@@ -13,9 +13,28 @@ const NavBar: FC<NavBarProps> = () => {
     const [navbarOpen, setNavbarOpen] = useState(false);
     const isMobile = useBreakpoint(down("sm"));
 
+    const ref = useRef<HTMLInputElement>(null);
+    useEffect(() => {
+        const handler = (event: Event) => {
+            if (
+                navbarOpen &&
+                ref.current &&
+                !ref.current.contains(event.target as Node)
+            ) {
+                setNavbarOpen(false);
+            }
+        };
+        document.addEventListener('mousedown', handler);
+        return () => {
+            // Cleanup the event listener
+            document.removeEventListener('mousedown', handler);
+        };
+    }, [navbarOpen]);
+
+
     return isMobile ? (
-            <nav className={styles.MobileNavBar}>
-                <div className={styles.Name}>jennisimone</div>
+            <nav ref={ref} className={styles.MobileNavBar}>
+                <a className={styles.Name} href={'/'}>jennisimone</a>
                 <div>
                     <button
                         className={styles.Toggle}
@@ -46,7 +65,7 @@ const NavBar: FC<NavBarProps> = () => {
         )
         : (
             <nav className={styles.NavBar}>
-                <div className={styles.Name}>jennisimone</div>
+                <a href={'/'} className={styles.Name}>jennisimone</a>
                 <ul>
                     <li>
                         <NavLink to="/">Home</NavLink>
