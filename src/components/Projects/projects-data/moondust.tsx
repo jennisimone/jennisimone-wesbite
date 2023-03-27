@@ -12,5 +12,5 @@ export const moondustProps: ProjectSummaryProps = {
         //     an online community. </p>
     ],
     icon:
-        <a target="_blank" href='https://jennisimone.itch.io/moondust' rel="noreferrer"><img alt='Play on itch.io' src='/images/icons/badge-color.png'/></a>
+        <a target="_blank" href='https://jennisimone.itch.io/moondust' rel="noreferrer"><img alt='Play on itch.io' src='/images/icons/itch-badge.png'/></a>
 }

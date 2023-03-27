@@ -17,7 +17,9 @@ const ProjectSummary: FC<ProjectSummaryProps> = (props) => (
             <img className={styles.Image} src={`images/projects/project-summary/${props.imageName}`}
                  alt={props.imageAlt}/>
             <div className={styles.Summary}>{props.projectSummary}</div>
-            <a className={styles.LearnMore} href={`/projects/${props.path}`}>Learn more</a>
+            <div className={styles.LearnMore}>
+                <a href={`/projects/${props.path}`}>Learn more</a>
+            </div>
             <div className={styles.Icon}>{props.icon}</div>
         </div>
     </div>

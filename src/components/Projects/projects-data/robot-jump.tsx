@@ -13,6 +13,6 @@ export const robotJumpProps: ProjectSummaryProps = {
     ],
     icon:
         <a target="_blank" href='https://jennisimone.itch.io/robot-jump' rel="noreferrer"><img
-            alt='Play on itch.io' src='/images/icons/badge-color.png'/></a>
+            alt='Play on itch.io' src='/images/icons/itch-badge.png'/></a>
 
 }
