@@ -14,6 +14,7 @@ import {whatShouldIPlayProps} from "./components/Projects/projects-data/what-sho
 import {operationPresentDropProps} from "./components/Projects/projects-data/operation-present-drop";
 import {robotJumpDetailProps} from "./components/ProjectDetail/data/robot-jump-detail";
 import {moondustProps} from "./components/Projects/projects-data/moondust";
+import Footer from './components/Footer/Footer';
 
 function App() {
     return (
@@ -31,6 +32,8 @@ function App() {
                 <Route path={`projects/${moondustProps.path}`} element={<ProjectDetail {...robotJumpDetailProps}/>}/>
                 <Route path="blog" element={<Blog/>}/>
             </Routes>
+            <div className={'EmptySpace'}/>
+            <Footer/>
         </>
     );
 }

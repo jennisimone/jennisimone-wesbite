@@ -28,6 +28,14 @@
   color: #61dafb;
 }
 
+.EmptySpace {
+  height: 80px;
+
+  @media only screen and (max-width: 600px) {
+    height: 60px;
+  }
+}
+
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);

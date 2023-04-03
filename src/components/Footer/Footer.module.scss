@@ -1,0 +1,84 @@
+.Footer {
+  background-color: #a5ccbb;
+  border-top: 1px solid #E7E7E7;
+  text-align: center;
+  padding: 20px;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  height: 50px;
+  width: 100%;
+
+  @media only screen and (max-width: 600px) {
+    padding: 8px;
+  }
+
+  .Inner {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    .Copyright {
+      width: 20%;
+      color: white;
+      align-self: end;
+
+      @media only screen and (max-width: 600px) {
+        font-size: x-small;
+        width: 38%;
+      }
+    }
+
+    .Links {
+      display: flex;
+      flex-direction: row;
+      width: 30%;
+      justify-content: end;
+      padding-right: 16px;
+
+      @media only screen and (max-width: 600px) {
+        font-size: x-small;
+        width: 60%;
+        padding-right: 2px;
+      }
+
+      .LinkSection {
+        display: flex;
+        flex-direction: column;
+        text-align: start;
+        padding-right: 16px;
+
+        @media only screen and (max-width: 600px) {
+          padding-right: 8px;
+        }
+
+        a {
+          max-height: 20px;
+          text-decoration: none;
+          padding: 4px;
+          text-align: start;
+          color: white;
+
+          @media only screen and (max-width: 600px) {
+            padding-right: 2px;
+          }
+
+          img {
+            max-height: 16px;
+            padding-right: 8px;
+
+            @media only screen and (max-width: 600px) {
+              padding-right: 2px;
+              max-height: 8px;
+            }
+          }
+
+        }
+
+        a:hover {
+          color: black;
+        }
+      }
+    }
+  }
+}
