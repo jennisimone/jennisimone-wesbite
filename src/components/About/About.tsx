@@ -22,11 +22,11 @@ const About: FC<AboutProps> = () => (
                     <h3>About me</h3>
                     <img src={'/images/about-image.jpeg'} alt={'author'}/>
                 </div>
-                <p>Hello! I'm a software developer based in Manchester, UK. My professional specialty is mainly back end
-                    web development in Kotlin, Java and Typescript. Beyond my job, I have a personal interest in Game
-                    Development & Android Development. I try to make most of my music and assets in my games & apps
-                    although my skills are limited. For art work this is generally done in Aseprite or Procreate. My music
-                    is made in Garage Band, using either in built tools or a physical keyboard & bass. </p>
+                <div className={styles.Body}>
+                    <p>Hello! I'm a software developer based in Manchester, UK. My professional specialty is mainly back end web development in Kotlin, Java and Typescript. </p>
+                    <p> Beyond my job, I have a personal interest in Game Development & Android Development. I try to make most of my music and assets in my games & apps although my skills are limited.</p>
+                    <p> For art work this is generally done in Aseprite or Procreate. My music is made in Garage Band, using either in built tools or a physical keyboard & bass. </p>
+                </div>
             </div>
         </div>
     </div>
