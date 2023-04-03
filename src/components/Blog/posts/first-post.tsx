@@ -6,13 +6,35 @@ export const firstPostData: BlogPostProps = {
     title: 'Making a portfolio site',
     date: '27th March 2023',
     post: [
-        <p>Having my own website is something I've wanted to do for a while. With my gaming & app portfolio growing it felt like the right time. There was one big problem though -</p>,
-        <p>I'm a backend developer.</p>,
-        <p>On the surface, it doesn't seem like a big problem. I've done plenty of front end work in my career so I know how to do the programming, but what I can't do is design. My art & design skills are non-existent.</p>,
-        <p>So what can I do to rectify that? Well I started by just making a basic layout and adding in the content I need. At least at that point I had a functioning website, hosted, with continuous deployment & links off to all my projects.</p>,
-        <p>After some serious thought as to how I wanted it to look, I decided to go with a 90s retro tech style with pastel elements. I’m a big fan of pastel, particularly pinks, purples and greens, so I used these as a colour scheme. The rest of the style is loosely based off old windows operating systems. Thick lines, retro fonts and separate boxes for headings.</p>,
-        <p>Now for the technical information. The website is made using react & firebase. </p>,
-        <p>I chose react because I've used it more recently than I have angular. It's versatile and easy to use once you have the hang of it. I’ve used styled components and SASS throughout so I can flexible reuse blocks throughout with different content. I’m managing a lot of the content using props. </p>,
-        <p>I chose firebase primarily because it's free. Using the free tier I could easily create the website, using a domain I own, and deploy it every time I upload to my master brand.</p>,
+        <p>A few weeks ago I had an idea - I should make a
+            portfolio site.</p>,
+        <p>I decided this for a couple of reasons:</p>,
+        <ul>
+            <li >I have a lot of projects and no where to showcase them all</li>
+            <li >It’s a fun and challenging project</li>
+            <li >It will help me develop my front end design skills.</li>
+        </ul>,
+        <p>By trade I’m a backend developer, I mainly work in
+            Java, Kotlin and NodeTS - and whilst I do a little bit of front end here and there, I mainly still to the
+            APIs and servers. </p>,
+        <p>So I set out to try and build on the things that I
+            knew using React and Firebase. I worked off styled components since this is a pattern we use at work so I
+            could use knowledge I already had and refer to other code bases if I needed some direction. I wrote in
+            Typescript because I’ve used it a lot and I prefer the structure of it over Javascript. </p>,
+        <p>This was also a great opportunity to learn more about
+            the hosting side of things. I chose Google Firebase primarily because it’s free. But it also has
+            comprehensive documentation and it meant I could keep everything including my domain management in one
+            place. </p>,
+        <p>One thing that really held me back throughout this
+            journey though was that I have no design skills. When I make a game or an app, it takes me a long time to
+            come up with a design I’m happy with, and most of the time I’m not 100% happy with it. When I started the
+            site I kept the design very simple and focused instead on layout. </p>,
+        <p>At one point I had the idea to go with a pastel retro
+            design. I’ve seen a lot of this design style coming up recently and I like it a lot so I started
+            implementing it into my designs. One thing these designs tend to do a lot is use hard outlines for things,
+            so I’ve implemented this, along with separate background colours. Think Windows Classic. </p>,
+        <p>Overall I’m happy with how the site turned out, I
+            don’t think it’s perfect, but now that I have some design elements in there I hope it at least gives out
+            less of a ‘backend developer does front end’ vibes. </p>,
     ]
 }
