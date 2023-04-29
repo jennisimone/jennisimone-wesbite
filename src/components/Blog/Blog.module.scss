@@ -35,6 +35,8 @@
 
   .PostLinkContainer {
     padding: 16px;
+    display: flex;
+    flex-direction: column;
   }
 
   .PostLinks {
