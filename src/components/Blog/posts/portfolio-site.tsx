@@ -1,7 +1,7 @@
 import React from "react";
 import { BlogPostProps } from "../../BlogPost/BlogPost";
 
-export const firstPostData: BlogPostProps = {
+export const portfolioSitePostData: BlogPostProps = {
     id: 'portfolio-site',
     title: 'Making a portfolio site',
     date: '27th March 2023',

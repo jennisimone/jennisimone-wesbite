@@ -1,20 +1,23 @@
 import React, { FC } from 'react';
 import styles from './Blog.module.scss';
 import BlogPost from "../BlogPost/BlogPost";
-import { firstPostData } from "./posts/first-post";
+import { portfolioSitePostData } from "./posts/portfolio-site";
+import { hackJamPostData } from "./posts/hacks-and-jams";
 
 interface ContactProps {}
 
 const Blog: FC<ContactProps> = () => (
   <div className={styles.Content}>
       <div className={styles.Sidebar}>
-          <div>Previous Posts</div>
+          <div>Posts</div>
           <div className={styles.PostLinkContainer}>
-              <button className={styles.PostLinks} onClick={() => scrollToBlog(firstPostData.id)}>{firstPostData.title}</button>
+              <button className={styles.PostLinks} onClick={() => scrollToBlog(hackJamPostData.id)}>{hackJamPostData.title}</button>
+              <button className={styles.PostLinks} onClick={() => scrollToBlog(portfolioSitePostData.id)}>{portfolioSitePostData.title}</button>
           </div>
       </div>
       <div className={styles.Posts}>
-          <BlogPost {...firstPostData}/>
+          <BlogPost {...hackJamPostData}/>
+          <BlogPost {...portfolioSitePostData}/>
       </div>
   </div>
 );

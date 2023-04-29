@@ -9,6 +9,7 @@
 
   @media only screen and (max-width: 600px) {
     padding: 10px;
+    flex-direction: column;
   }
 
   .Sidebar {
@@ -16,9 +17,11 @@
     border: 2px solid $color-purple;
     box-shadow: 10px 10px $color-purple;
     padding: 8px;
+    height: fit-content;
 
     @media only screen and (max-width: 600px) {
-      display: none;
+      margin: 0 8px 16px 8px;
+      width: 89%;
     }
   }
 
