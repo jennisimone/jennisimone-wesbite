@@ -20,7 +20,6 @@ const ProjectSummary: FC<ProjectSummaryProps> = (props) => (
             <div className={styles.LearnMore}>
                 <a href={`/projects/${props.path}`}>Learn more</a>
             </div>
-            <div className={styles.Icon}>{props.icon}</div>
         </div>
     </div>
 );

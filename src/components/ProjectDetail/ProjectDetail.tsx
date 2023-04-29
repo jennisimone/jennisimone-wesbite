@@ -12,7 +12,6 @@ const ProjectDetail: FC<ProjectDetailProps> = (props) => (
         <div className={styles.Title}>{props.title}</div>
 
         <div className={styles.DetailContainer}>
-            <div>{props.gameEmbed}</div>
             <div className={styles.Description}>{props.description}</div>
         </div>
     </div>

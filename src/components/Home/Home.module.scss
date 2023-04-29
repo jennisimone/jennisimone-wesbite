@@ -17,33 +17,47 @@
 
   .Panel {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: center;
+    align-items: center;
 
     @media only screen and (max-width: 600px) {
       flex-direction: column;
       align-items: center;
     }
 
-    .Image {
+    .MobileImage {
       width: 25%;
-      padding: 16px 16px 16px 64px;
+      margin: 16px 16px 16px 64px;
+      border: 2px solid black;
+      display: none;
 
       @media only screen and (max-width: 600px) {
         width: 90%;
-        padding: 8px;
+        margin: 8px;
         text-align: center;
+        display: flex;
+      }
+    }
+
+    .DesktopImage {
+      width: 100%;
+      border: 2px solid black;
+
+      @media only screen and (max-width: 600px) {
+        display: none;
       }
     }
   }
 
   .Technologies {
-    border: 1px solid #a5ccbb;
+    border: 2px solid black;
     max-width: 60%;
     display: flex;
     flex-direction: column;
     margin-top: 16px;
     padding: 4px;
+    box-shadow: 10px 10px black;
 
     @media only screen and (max-width: 600px) {
       max-width: 90%;
@@ -61,7 +75,6 @@
       text-align: center;
       justify-content: space-evenly;
       padding: 16px;
-      width: 100%;
 
       .TechImage {
         max-width: 20%;

@@ -18,14 +18,16 @@ const About: FC<AboutProps> = () => (
                     src={'/images/icons/play-logo.png'} alt={'google play logo'}/>Google Play</a>
             </div>
             <div className={styles.About}>
-                <div className={styles.AboutImage}>
-                    <h3>About me</h3>
-                    <img src={'/images/about-image.jpeg'} alt={'author'}/>
-                </div>
-                <div className={styles.Body}>
-                    <p>Hello! I'm a software developer based in Manchester, UK. My professional specialty is mainly back end web development in Kotlin, Java and Typescript. </p>
-                    <p> Beyond my job, I have a personal interest in Game Development & Android Development. I try to make most of my music and assets in my games & apps although my skills are limited.</p>
-                    <p> For art work this is generally done in Aseprite or Procreate. My music is made in Garage Band, using either in built tools or a physical keyboard & bass. </p>
+                <h3>About me</h3>
+                <div className={styles.BodyContainer}>
+                    <div className={styles.AboutImage}>
+                        <img src={'/images/about-image.jpeg'} alt={'author'}/>
+                    </div>
+                    <div className={styles.Body}>
+                        <p>Hello! I'm a software developer based in Manchester, UK. My professional specialty is mainly back end web development in Kotlin, Java and Typescript. </p>
+                        <p> Beyond my job, I have a personal interest in Game Development & Android Development. I try to make most of my music and assets in my games & apps although my skills are limited.</p>
+                        <p> For art work this is generally done in Aseprite or Procreate. My music is made in Garage Band, using either in built tools or a physical keyboard & bass. </p>
+                    </div>
                 </div>
             </div>
         </div>
