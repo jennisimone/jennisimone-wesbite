@@ -47,6 +47,12 @@
       border: 2px solid black;
       color: black;
       padding: 4px;
+
+      @media only screen and (max-width: 600px) {
+        margin: 8px;
+        padding: 2px;
+      }
+
     }
 
     a:hover {
