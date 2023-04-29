@@ -23,4 +23,19 @@
   .Post {
     text-align: justify;
   }
+
+  table {
+    width: 100%;
+    text-align: left;
+    border-collapse: collapse;
+  }
+  table td, table th {
+    border: 2px solid $color-green;
+    padding: 4px 4px;
+  }
+
+  table thead th {
+    font-weight: bold;
+    color: $color-green;
+  }
 }

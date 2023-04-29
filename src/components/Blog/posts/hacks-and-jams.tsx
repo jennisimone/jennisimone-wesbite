@@ -33,15 +33,17 @@ export const hackJamPostData: BlogPostProps = {
         <p>Over the past few years here’s what I’ve made at hacks:
         </p>,
         <table>
+            <thead>
+                <tr>
+                    <th>
+                        Hack type
+                    </th>
+                    <th>
+                        Project
+                    </th>
+                </tr>
+            </thead>
             <tbody>
-            <tr>
-                <td>
-                    Hack type
-                </td>
-                <td>
-                    Project
-                </td>
-            </tr>
             <tr>
                 <td>
                     Citywide tech hack
@@ -63,7 +65,7 @@ export const hackJamPostData: BlogPostProps = {
                     Citywide tech hack
                 </td>
                 <td>
-                    An MI algorithm using pandas for comparing apple food prices with apple stock.
+                    A machine learning algorithm using pandas for comparing apple food prices with apple stock.
                 </td>
             </tr>
             <tr>
@@ -71,7 +73,8 @@ export const hackJamPostData: BlogPostProps = {
                     Work hack
                 </td>
                 <td>
-                    Covoider - A covid based game where you navigate around an office collecting items like masks whilst avoiding over people
+                    Covoider - A covid based game where you navigate around an office collecting items like masks whilst
+                    avoiding over people
                 </td>
             </tr>
             <tr>
@@ -87,7 +90,7 @@ export const hackJamPostData: BlogPostProps = {
                     Work hack
                 </td>
                 <td>
-                    Mask up - A whack-a-mole style game where you have to mask up infected people
+                    Mask up, stay sharp - A whack-a-mole style game where you have to mask up infected people
                 </td>
             </tr>
             <tr>

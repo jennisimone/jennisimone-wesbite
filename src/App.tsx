@@ -20,6 +20,12 @@ import { moondustDetailProps } from "./components/ProjectDetail/data/moondust-de
 import { antHillMassacreDetailProps } from "./components/ProjectDetail/data/ant-hill-massacre-detail";
 import { whatShouldIPlayDetailProps } from "./components/ProjectDetail/data/what-should-i-play-detail";
 import { operationPresentDropDetailProps } from "./components/ProjectDetail/data/operation-present-drop";
+import { covoiderProps } from "./components/Projects/projects-data/covoider";
+import { covoiderDetailProps } from "./components/ProjectDetail/data/covoider-detail";
+import { maskUpStaySharpProps } from "./components/Projects/projects-data/mask-up-stay-sharp";
+import { maskUpStaySharpDetailProps } from "./components/ProjectDetail/data/mask-up-stay-sharp-detail";
+import { vehicleMovesProps } from "./components/Projects/projects-data/vehicle-moves";
+import { vehicleMovesDetailProps } from "./components/ProjectDetail/data/vehicle-moves-detail";
 
 function App() {
     return (
@@ -35,6 +41,9 @@ function App() {
                 <Route path={`projects/${whatShouldIPlayProps.path}`} element={<ProjectDetail {...whatShouldIPlayDetailProps}/>}/>
                 <Route path={`projects/${operationPresentDropProps.path}`} element={<ProjectDetail {...operationPresentDropDetailProps}/>}/>
                 <Route path={`projects/${moondustProps.path}`} element={<ProjectDetail {...moondustDetailProps}/>}/>
+                <Route path={`projects/${covoiderProps.path}`} element={<ProjectDetail {...covoiderDetailProps}/>}/>
+                <Route path={`projects/${maskUpStaySharpProps.path}`} element={<ProjectDetail {...maskUpStaySharpDetailProps}/>}/>
+                <Route path={`projects/${vehicleMovesProps.path}`} element={<ProjectDetail {...vehicleMovesDetailProps}/>}/>
                 <Route path="blog" element={<Blog/>}/>
             </Routes>
             <div className={'EmptySpace'}/>

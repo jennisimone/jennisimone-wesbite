@@ -7,6 +7,9 @@ import { afraidOfTheDarkProps } from "./projects-data/afraid-of-the-dark";
 import { robotJumpProps } from "./projects-data/robot-jump";
 import { operationPresentDropProps } from "./projects-data/operation-present-drop";
 import { moondustProps } from "./projects-data/moondust";
+import { covoiderProps } from "./projects-data/covoider";
+import { maskUpStaySharpProps } from "./projects-data/mask-up-stay-sharp";
+import { vehicleMovesProps } from "./projects-data/vehicle-moves";
 
 interface ProjectsProps {
 }
@@ -19,6 +22,9 @@ const Projects: FC<ProjectsProps> = () => (
         <ProjectSummary {...antHillMassacreProps}/>
         <ProjectSummary {...whatShouldIPlayProps}/>
         <ProjectSummary {...operationPresentDropProps}/>
+        <ProjectSummary {...covoiderProps}/>
+        <ProjectSummary {...maskUpStaySharpProps}/>
+        <ProjectSummary {...vehicleMovesProps}/>
     </div>
 );
 
