@@ -7,7 +7,6 @@ export interface ProjectSummaryProps {
     imageName: string,
     imageAlt: string,
     projectSummary: ReactElement[]
-    icon: ReactElement
 }
 
 const ProjectSummary: FC<ProjectSummaryProps> = (props) => (

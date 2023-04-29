@@ -1,3 +1,5 @@
+@import "src/utils/colours";
+
 .ProjectDetail {
   padding: 20px;
   text-align: center;
@@ -5,13 +7,21 @@
   .Title {
     font-size: xx-large;
     padding: 16px;
+    background-color: $color-purple;
+    border: 2px solid black;
+    color: white;
+    box-shadow: 10px 10px $color-purple;
   }
 
   .DetailContainer {
     display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    border: 2px solid;
+    margin-top: 16px;
+    padding-bottom: 8px;
+    background-color: $color-pink;
+    box-shadow: 10px 10px $color-pink;
 
     @media only screen and (max-width: 600px) {
       flex-direction: column;
@@ -30,6 +40,19 @@
       @media only screen and (max-width: 600px) {
         width: 90%;
       }
+    }
+
+    a {
+      text-decoration: none;
+      border: 2px solid black;
+      color: black;
+      padding: 4px;
+    }
+
+    a:hover {
+      color: white;
+      background-color: $color-pink;
+      border: 2px solid white;
     }
   }
 }

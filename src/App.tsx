@@ -15,6 +15,11 @@ import {operationPresentDropProps} from "./components/Projects/projects-data/ope
 import {robotJumpDetailProps} from "./components/ProjectDetail/data/robot-jump-detail";
 import {moondustProps} from "./components/Projects/projects-data/moondust";
 import Footer from './components/Footer/Footer';
+import { afraidOfTheDarkDetailProps } from "./components/ProjectDetail/data/afraid-of-the-dark-detail";
+import { moondustDetailProps } from "./components/ProjectDetail/data/moondust-detail";
+import { antHillMassacreDetailProps } from "./components/ProjectDetail/data/ant-hill-massacre-detail";
+import { whatShouldIPlayDetailProps } from "./components/ProjectDetail/data/what-should-i-play-detail";
+import { operationPresentDropDetailProps } from "./components/ProjectDetail/data/operation-present-drop";
 
 function App() {
     return (
@@ -24,12 +29,12 @@ function App() {
                 <Route path="/" element={<Home/>}/>
                 <Route path="about" element={<About/>}/>
                 <Route path="projects" element={<Projects/>}/>
-                <Route path={`projects/${antHillMassacreProps.path}`} element={<ProjectDetail {...robotJumpDetailProps}/>}/>
-                <Route path={`projects/${afraidOfTheDarkProps.path}`} element={<ProjectDetail {...robotJumpDetailProps}/>}/>
+                <Route path={`projects/${antHillMassacreProps.path}`} element={<ProjectDetail {...antHillMassacreDetailProps}/>}/>
+                <Route path={`projects/${afraidOfTheDarkProps.path}`} element={<ProjectDetail {...afraidOfTheDarkDetailProps}/>}/>
                 <Route path={`projects/${robotJumpProps.path}`} element={<ProjectDetail {...robotJumpDetailProps}/>}/>
-                <Route path={`projects/${whatShouldIPlayProps.path}`} element={<ProjectDetail {...robotJumpDetailProps}/>}/>
-                <Route path={`projects/${operationPresentDropProps.path}`} element={<ProjectDetail {...robotJumpDetailProps}/>}/>
-                <Route path={`projects/${moondustProps.path}`} element={<ProjectDetail {...robotJumpDetailProps}/>}/>
+                <Route path={`projects/${whatShouldIPlayProps.path}`} element={<ProjectDetail {...whatShouldIPlayDetailProps}/>}/>
+                <Route path={`projects/${operationPresentDropProps.path}`} element={<ProjectDetail {...operationPresentDropDetailProps}/>}/>
+                <Route path={`projects/${moondustProps.path}`} element={<ProjectDetail {...moondustDetailProps}/>}/>
                 <Route path="blog" element={<Blog/>}/>
             </Routes>
             <div className={'EmptySpace'}/>
