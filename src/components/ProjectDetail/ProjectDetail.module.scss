@@ -7,10 +7,10 @@
   .Title {
     font-size: xx-large;
     padding: 16px;
-    background-color: $color-purple;
+    background-color: $colour-purple;
     border: 2px solid black;
     color: white;
-    box-shadow: 10px 10px $color-purple;
+    box-shadow: 10px 10px $colour-purple;
   }
 
   .DetailContainer {
@@ -20,8 +20,8 @@
     border: 2px solid;
     margin-top: 16px;
     padding-bottom: 8px;
-    background-color: $color-pink;
-    box-shadow: 10px 10px $color-pink;
+    background-color: $colour-pink;
+    box-shadow: 10px 10px $colour-pink;
 
     @media only screen and (max-width: 600px) {
       flex-direction: column;
@@ -57,7 +57,7 @@
 
     a:hover {
       color: white;
-      background-color: $color-pink;
+      background-color: $colour-pink;
       border: 2px solid white;
     }
   }

@@ -1,6 +1,8 @@
+@import "src/utils/colours";
+
 .Footer {
-  background-color: #a5ccbb;
-  border-top: 1px solid #E7E7E7;
+  background-color: $colour-light-green;
+  border-top: 1px solid $colour-background;
   text-align: center;
   padding: 20px;
   position: fixed;

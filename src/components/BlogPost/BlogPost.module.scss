@@ -5,8 +5,8 @@
   flex-direction: column;
   padding: 10px;
   justify-content: flex-start;
-  border: 2px solid $color-pink;
-  box-shadow: 10px 10px $color-pink;
+  border: 2px solid $colour-pink;
+  box-shadow: 10px 10px $colour-pink;
   margin: 0 8px 20px 8px;
 
 
@@ -30,12 +30,12 @@
     border-collapse: collapse;
   }
   table td, table th {
-    border: 2px solid $color-green;
+    border: 2px solid $colour-green;
     padding: 4px 4px;
   }
 
   table thead th {
     font-weight: bold;
-    color: $color-green;
+    color: $colour-green;
   }
 }

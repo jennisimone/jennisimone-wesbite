@@ -28,8 +28,8 @@
       text-align: justify;
       border: 2px solid black;
       padding: 8px;
-      box-shadow: 10px 10px #f2d2cf;
-      background: #f2d2cf;
+      box-shadow: 10px 10px $colour-pink;
+      background: $colour-pink;
 
       @media only screen and (max-width: 600px) {
         text-align: start;
@@ -55,7 +55,7 @@
 
       img {
         max-height: 150px;
-        border: 2px solid $color-pink;
+        border: 2px solid $colour-pink;
       }
     }
 
@@ -65,8 +65,9 @@
       max-width: 30%;
       border: 2px solid black;
       padding: 8px;
-      box-shadow: 10px 10px #bdafd6;
-      background-color: #bdafd6;
+      box-shadow: 10px 10px $colour-purple;
+      background-color: $colour-purple;
+      height: fit-content;
 
 
       @media only screen and (max-width: 600px) {
@@ -99,11 +100,7 @@
       }
 
       a:hover {
-        color: #bdafd6;
-      }
-
-      a.active {
-        color: #00a8ff;
+        color: white;
       }
     }
 
@@ -117,7 +114,7 @@
     }
 
     .Body {
-      border: 2px solid $color-pink;
+      border: 2px solid $colour-pink;
       padding: 4px;
       margin: 0 4px 4px 0;
 

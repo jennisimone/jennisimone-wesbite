@@ -1,9 +1,11 @@
+@import "src/utils/colours";
+
 body {
   margin: 0;
   font-family: 'Share Tech Mono', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-color: #fdf7e9;
+  background-color: $colour-background;
 }
 
 code {
