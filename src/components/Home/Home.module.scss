@@ -1,3 +1,5 @@
+@import "src/utils/colours";
+
 .Home {
 
   .Title {
@@ -31,9 +33,10 @@
       margin: 16px 16px 16px 64px;
       border: 2px solid black;
       display: none;
+      box-shadow: 8px 8px black;
 
       @media only screen and (max-width: 600px) {
-        width: 90%;
+        width: 80%;
         margin: 8px;
         text-align: center;
         display: flex;
@@ -42,7 +45,7 @@
 
     .DesktopImage {
       width: 100%;
-      border: 2px solid black;
+      border: 2px solid $colour-purple;
 
       @media only screen and (max-width: 600px) {
         display: none;

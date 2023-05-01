@@ -7,7 +7,7 @@ interface HomeProps {
 const Home: FC<HomeProps> = () => (
     <div className={styles.Home}>
         <div className={styles.Panel}>
-            <img className={styles.MobileImage} alt='game screenshots' src={'images/side-image.png'}/>
+            <img className={styles.MobileImage} alt='game screenshots' src={'images/mobile-banner.png'}/>
             <img className={styles.DesktopImage} alt='game screenshots' src={'images/banner.png'}/>
             <div className={styles.Title}>
                 <div>
