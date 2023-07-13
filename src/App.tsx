@@ -26,6 +26,8 @@ import { maskUpStaySharpProps } from "./components/Projects/projects-data/mask-u
 import { maskUpStaySharpDetailProps } from "./components/ProjectDetail/data/mask-up-stay-sharp-detail";
 import { vehicleMovesProps } from "./components/Projects/projects-data/vehicle-moves";
 import { vehicleMovesDetailProps } from "./components/ProjectDetail/data/vehicle-moves-detail";
+import { expandedWitchProps } from "./components/Projects/projects-data/expanded-witch";
+import { expandedWitchDetailProps } from "./components/ProjectDetail/data/expanded-witch-detail";
 
 function App() {
     return (
@@ -44,6 +46,7 @@ function App() {
                 <Route path={`projects/${covoiderProps.path}`} element={<ProjectDetail {...covoiderDetailProps}/>}/>
                 <Route path={`projects/${maskUpStaySharpProps.path}`} element={<ProjectDetail {...maskUpStaySharpDetailProps}/>}/>
                 <Route path={`projects/${vehicleMovesProps.path}`} element={<ProjectDetail {...vehicleMovesDetailProps}/>}/>
+                <Route path={`projects/${expandedWitchProps.path}`} element={<ProjectDetail {...expandedWitchDetailProps}/>}/>
                 <Route path="blog" element={<Blog/>}/>
             </Routes>
             <div className={'EmptySpace'}/>

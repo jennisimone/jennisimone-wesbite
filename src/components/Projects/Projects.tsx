@@ -10,6 +10,7 @@ import { moondustProps } from "./projects-data/moondust";
 import { covoiderProps } from "./projects-data/covoider";
 import { maskUpStaySharpProps } from "./projects-data/mask-up-stay-sharp";
 import { vehicleMovesProps } from "./projects-data/vehicle-moves";
+import { expandedWitchProps } from "./projects-data/expanded-witch";
 
 interface ProjectsProps {
 }
@@ -25,6 +26,7 @@ const Projects: FC<ProjectsProps> = () => (
         <ProjectSummary {...covoiderProps}/>
         <ProjectSummary {...maskUpStaySharpProps}/>
         <ProjectSummary {...vehicleMovesProps}/>
+        <ProjectSummary {...expandedWitchProps}/>
     </div>
 );
 
