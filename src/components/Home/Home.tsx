@@ -44,8 +44,8 @@ const Home: FC<HomeProps> = () => (
                                      src={'images/icons/technologies/CSharp_Icon.png'}/>
                                 <img className={styles.TechImage} alt='Kotlin' title='Kotlin'
                                      src={'images/icons/technologies/Kotlin_Icon.png'}/>
-                                <img className={styles.TechImage} alt='JavaScript' title='JavaScript'
-                                     src={'images/icons/technologies/Javascript_Icon.png'}/>
+                                <img className={styles.TechImage} alt='TypeScript' title='TypeScript'
+                                     src={'images/icons/technologies/Typescript_Icon.png'}/>
                                 <img className={styles.TechImage} alt='Java' title='Java'
                                      src={'images/icons/technologies/Java_Icon.png'}/>
                             </div>

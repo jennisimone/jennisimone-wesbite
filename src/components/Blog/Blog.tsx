@@ -4,6 +4,8 @@ import BlogPost from "../BlogPost/BlogPost";
 import { portfolioSitePostData } from "./posts/portfolio-site";
 import { hackJamPostData } from "./posts/hacks-and-jams";
 import { makingModsPostData } from "./posts/making-mods";
+import { conferencesPostData } from "./posts/conferences";
+import { gameEnginePostData } from "./posts/game-engine";
 
 interface ContactProps {}
 
@@ -15,12 +17,16 @@ const Blog: FC<ContactProps> = () => (
               <button className={styles.PostLinks} onClick={() => scrollToBlog(makingModsPostData.id)}>{makingModsPostData.title}</button>
               <button className={styles.PostLinks} onClick={() => scrollToBlog(hackJamPostData.id)}>{hackJamPostData.title}</button>
               <button className={styles.PostLinks} onClick={() => scrollToBlog(portfolioSitePostData.id)}>{portfolioSitePostData.title}</button>
+              <button className={styles.PostLinks} onClick={() => scrollToBlog(gameEnginePostData.id)}>{gameEnginePostData.title}</button>
+              <button className={styles.PostLinks} onClick={() => scrollToBlog(conferencesPostData.id)}>{conferencesPostData.title}</button>
           </div>
       </div>
       <div className={styles.Posts}>
           <BlogPost {...makingModsPostData}/>
           <BlogPost {...hackJamPostData}/>
           <BlogPost {...portfolioSitePostData}/>
+          <BlogPost {...gameEnginePostData}/>
+          <BlogPost {...conferencesPostData}/>
       </div>
   </div>
 );
