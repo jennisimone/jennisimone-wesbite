@@ -14,19 +14,19 @@ const Blog: FC<ContactProps> = () => (
       <div className={styles.Sidebar}>
           <div>Posts</div>
           <div className={styles.PostLinkContainer}>
+              <button className={styles.PostLinks} onClick={() => scrollToBlog(conferencesPostData.id)}>{conferencesPostData.title}</button>
+              <button className={styles.PostLinks} onClick={() => scrollToBlog(gameEnginePostData.id)}>{gameEnginePostData.title}</button>
               <button className={styles.PostLinks} onClick={() => scrollToBlog(makingModsPostData.id)}>{makingModsPostData.title}</button>
               <button className={styles.PostLinks} onClick={() => scrollToBlog(hackJamPostData.id)}>{hackJamPostData.title}</button>
               <button className={styles.PostLinks} onClick={() => scrollToBlog(portfolioSitePostData.id)}>{portfolioSitePostData.title}</button>
-              <button className={styles.PostLinks} onClick={() => scrollToBlog(gameEnginePostData.id)}>{gameEnginePostData.title}</button>
-              <button className={styles.PostLinks} onClick={() => scrollToBlog(conferencesPostData.id)}>{conferencesPostData.title}</button>
           </div>
       </div>
       <div className={styles.Posts}>
+          <BlogPost {...conferencesPostData}/>
+          <BlogPost {...gameEnginePostData}/>
           <BlogPost {...makingModsPostData}/>
           <BlogPost {...hackJamPostData}/>
           <BlogPost {...portfolioSitePostData}/>
-          <BlogPost {...gameEnginePostData}/>
-          <BlogPost {...conferencesPostData}/>
       </div>
   </div>
 );
