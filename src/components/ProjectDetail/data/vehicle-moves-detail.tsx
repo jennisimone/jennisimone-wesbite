@@ -8,6 +8,6 @@ export const vehicleMovesDetailProps: ProjectDetailProps = {
         <p>The game was made in Unity using C#. The assets are a mix of ones made in Aseprite and sourced free and paid assets. It saves the users high score into the cache using Unity's playerprefs.</p>,
         <p>The game works on desktop only due to the controls.</p>,
     ],
-    playLink: "https://xmas-hack-2021.netlify.app",
+    playLink: "https://xmas-hack-2022.netlify.app",
     destination: 'Netlify'
 }

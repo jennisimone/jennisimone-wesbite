@@ -8,6 +8,6 @@ export const operationPresentDropDetailProps: ProjectDetailProps = {
         <p>It was made in Unity using C#, images were made in Aseprite and the music was made in garage band. The game uses unity's playerprefs to save a users high score locally to their device. At this time the app has only been updated once to fix some bugs and allow the user to disable the music.</p>,
         <p>The app is an android application so is only usable on those devices. I currently have no plans to port this over to apple due to the recurring cost of a developer license.</p>,
     ],
-    playLink: "https://play.google.com/store/apps/details?id=com.jennisimone.whatshouldiplay",
+    playLink: "https://play.google.com/store/apps/details?id=com.DefaultCompany.operationpresentdrop",
     destination: 'Google Play'
 }
