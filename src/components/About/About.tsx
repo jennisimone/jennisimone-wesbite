@@ -8,6 +8,8 @@ const About: FC<AboutProps> = () => (
     <div className={styles.Home}>
         <div className={styles.SectionContainer}>
             <div className={styles.Links}>
+                <a target={'_blank'} href='mailto:contact@jennisimone.com' rel="noreferrer"><img
+                    src={'/images/icons/email.png'} alt={'email icon'}/>Email</a>
                 <a target={'_blank'} href='https://github.com/jennisimone' rel="noreferrer"> <img
                     src={'/images/icons/github.svg'} alt={'github logo'}/>Github</a>
                 <a target={'_blank'} href='https://www.linkedin.com/in/fosterjenni/' rel="noreferrer"><img
