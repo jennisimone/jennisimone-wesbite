@@ -28,6 +28,10 @@ import { vehicleMovesProps } from "./components/Projects/projects-data/vehicle-m
 import { vehicleMovesDetailProps } from "./components/ProjectDetail/data/vehicle-moves-detail";
 import { expandedWitchProps } from "./components/Projects/projects-data/expanded-witch";
 import { expandedWitchDetailProps } from "./components/ProjectDetail/data/expanded-witch-detail";
+import { fastFoodDashDetailProps } from "./components/ProjectDetail/data/fast-food-dash-detail";
+import { fastFoodDashProps } from "./components/Projects/projects-data/fast-food-dash";
+import { brickBreakerProps } from "./components/Projects/projects-data/brick-breaker";
+import { brickBreakerDetailProps } from "./components/ProjectDetail/data/brick-breaker-detail";
 
 function App() {
     return (
@@ -47,6 +51,8 @@ function App() {
                 <Route path={`projects/${maskUpStaySharpProps.path}`} element={<ProjectDetail {...maskUpStaySharpDetailProps}/>}/>
                 <Route path={`projects/${vehicleMovesProps.path}`} element={<ProjectDetail {...vehicleMovesDetailProps}/>}/>
                 <Route path={`projects/${expandedWitchProps.path}`} element={<ProjectDetail {...expandedWitchDetailProps}/>}/>
+                <Route path={`projects/${fastFoodDashProps.path}`} element={<ProjectDetail {...fastFoodDashDetailProps}/>}/>
+                <Route path={`projects/${brickBreakerProps.path}`} element={<ProjectDetail {...brickBreakerDetailProps}/>}/>
                 <Route path="blog" element={<Blog/>}/>
             </Routes>
             <div className={'EmptySpace'}/>

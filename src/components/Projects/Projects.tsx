@@ -11,6 +11,8 @@ import { covoiderProps } from "./projects-data/covoider";
 import { maskUpStaySharpProps } from "./projects-data/mask-up-stay-sharp";
 import { vehicleMovesProps } from "./projects-data/vehicle-moves";
 import { expandedWitchProps } from "./projects-data/expanded-witch";
+import { fastFoodDashProps } from "./projects-data/fast-food-dash";
+import { brickBreakerProps } from "./projects-data/brick-breaker";
 
 interface ProjectsProps {
 }
@@ -27,6 +29,8 @@ const Projects: FC<ProjectsProps> = () => (
         <ProjectSummary {...maskUpStaySharpProps}/>
         <ProjectSummary {...vehicleMovesProps}/>
         <ProjectSummary {...expandedWitchProps}/>
+        <ProjectSummary {...fastFoodDashProps}/>
+        <ProjectSummary {...brickBreakerProps}/>
     </div>
 );
 
